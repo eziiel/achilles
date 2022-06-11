@@ -2,7 +2,7 @@
 
 <p align="center" >
 
-<!-- <img src=".github/banner.png" alt="banner"> -->
+<img src=".github/Preload.png" alt="banner">
 
 </p>
 <p align="center">
@@ -48,11 +48,21 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 
 This project is licensed under the MIT License. See the [LICENSE](https://opensource.org/licenses/MIT) file for details.
 
+
+<br>
+<br>
+<br>
+
 ---
+<br>
 
 <p align="center">
     🚧🔧 Project in construction 🔧🚧
 </p>
+<br>
+
+---
+
 
 Made with 💜 by [eziiel](https://github.com/eziiel) 🙌🚀
 

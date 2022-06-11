@@ -2,7 +2,7 @@ import React from "react";
 import { ButtonsDiv, ImgMain, P1, Section, Titulo } from "../../styled/mainStyled";
 import { Main } from "../../styled/mainStyled";
 import { Button } from "./button";
-import fotoBg from "../../images/foto-main-dark.svg"
+// import fotoBg from "../../images/foto-main-dark.svg"
 
 export const MainPage = () => {
   return (
@@ -35,11 +35,9 @@ export const MainPage = () => {
 
       </Section>
 
-      {/* <ImgMain>
-      
-      </ImgMain> */}
 
-      <ImgMain src={fotoBg} alt="a" />
+
+      <ImgMain/>
 
 
     </Main>

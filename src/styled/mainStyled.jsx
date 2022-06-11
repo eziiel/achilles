@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import fotoBG from "../images/foto-main-dark.svg";
+import fotoBG from "../images/foto-main-dark.png";
 
 function pixelsToRem(...values) {
   return values.reduce((a, i) => (a += i / 16 + `rem `), "").trim();
@@ -55,15 +55,15 @@ const ButtonsDiv = styled.div`
   gap: 5rem;
 `;
 
-const ImgMain = styled.img`
+const ImgMain = styled.div`
   display: block;
   /* padding: 1rem; */
   width: 100%;
   height: 100%;
   /* background: red; */
-  /* background: url(${fotoBG}) center no-repeat; */
-  /* background-position: center; */
-  /* background-size: cover; */
+  background: transparent url(${fotoBG}) center no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 export { Main, Section, Titulo, P1, ButtonsDiv, ImgMain };

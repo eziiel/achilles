@@ -27,18 +27,18 @@ const ButtonTheme = styled.button`
       content: "";
       top: 0;
       left: 2px;
-      width: 1px;
-      height: 120%;
-      background: linear-gradient(135deg, #BF841A , #000 );;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(135deg, #BF841A , #0A0D11);;
       position: absolute;
     }
     ::after {
       content: "";
       top: 0;
       left: 2px;
-      width: 120%;
-      height: 1px;
-      background: linear-gradient(135deg, #BF841A , #000 );;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(135deg, #BF841A , #0A0D11 );;
       position: absolute;
     }
     span{
