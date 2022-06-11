@@ -4,7 +4,7 @@ import styled, { css } from "styled-components"
 const ButtonTheme = styled.button`
   width: 50px;
   height: 50px;
-  background: transparent url("../../src/images/sun.svg") center no-repeat;
+  background: transparent url("../../src/images/moon.svg") center no-repeat;
   border: none;
   cursor: pointer;  
   `
