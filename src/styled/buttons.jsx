@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components"
-// import sun from "../images/sun.svg"
+import sun from "../images/sun.svg"
 
 const ButtonTheme = styled.button`
   width: 50px;
   height: 50px;
-  /* background: transparent url(${sun}) center no-repeat; */
+  background: transparent url(${sun}) center no-repeat;
   border: none;
   cursor: pointer;  
   `
