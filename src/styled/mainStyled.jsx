@@ -6,7 +6,7 @@ function pixelsToRem(...values) {
 }
 
 const Main = styled.main`
-  max-width: 950px;
+  max-width: 1100px;
   margin: 0 auto;
   padding-top: ${pixelsToRem(2)};
   display: grid;
