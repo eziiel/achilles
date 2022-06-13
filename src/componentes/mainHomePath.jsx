@@ -1,8 +1,9 @@
 import React from 'react'
 import {GlobalStyled} from "../styled/globalStyled"
-import { MainPage } from './utils/main'
-import { Nav } from './utils/nav'
-import { Works } from './utils/works'
+import { Nav } from './nav'
+import { Works } from './works'
+import { MainPage } from './main'
+import { Contribuition } from './contribuition'
 
 
 export const MainHome = () => {
@@ -12,6 +13,7 @@ export const MainHome = () => {
         <Nav/>
         <MainPage/>
         <Works/>
+        <Contribuition/>
       </>
     )
 }

@@ -10,10 +10,7 @@ const DivWorks = styled.div`
 const DivWorksphotos = styled.div`
   display: flex;
   overflow: hidden;
-  /* overflow-x: scroll; */
   gap: 2rem;
-  /* width: 1500px; */
-
  
 `
 const InfoWorks = styled.div`
@@ -35,7 +32,7 @@ const SpanInfo = styled.span`
     position: absolute;
     content: "";
     top: 40px;
-    left: 90%;
+    left: ${props => props.left};
     width: 3px;
     height: 35px;
     border-radius: 20%;

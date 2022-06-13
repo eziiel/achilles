@@ -24,6 +24,7 @@ const GlobalStyled = createGlobalStyle`
 
   :root {
     //collors
+    --bg:#050607;
     --dark-blue: #0A0D11;
 
     //golders
@@ -44,7 +45,7 @@ const GlobalStyled = createGlobalStyle`
 
 
   body {
-    background: var(--dark-blue);
+    background: var(--bg);
     font-family: 'Cinzel', cursive;
   }
 

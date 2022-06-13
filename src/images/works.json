@@ -1,22 +1,22 @@
 [
   {
     "alt":"works",
-    "src" : "/src/images/works-state.png"
+    "src" : "../src/images/works-state.png"
   },
   {
     "alt":"works2",
-    "src" : "/src/images/works-state2.png"
+    "src" : "../src/images/works-state2.png"
   },
   {
     "alt":"works3",
-    "src" : "/src/images/works-state3.png"
+    "src" : "../src/images/works-state3.png"
   },
   {
     "alt":"works4",
-    "src" : "/src/images/works-state4.png"
+    "src" : "../src/images/works-state4.png"
   },
   {
     "alt":"works5",
-    "src" : "/src/images/works-state5.png"
+    "src" : "../src/images/works-state5.png"
   }
 ]

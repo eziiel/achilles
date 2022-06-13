@@ -30,6 +30,7 @@ const Titulo = styled.div`
   -webkit-text-fill-color: transparent;
   /* color: black; */
   font: var(--font1);
+  font-size: ${props => props.fontS};
   padding: 2rem 0;
 
   h1 {
