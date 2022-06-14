@@ -45,7 +45,7 @@ const GlobalStyled = createGlobalStyle`
 
 
   body {
-    background: var(--bg);
+    background: var(--dark-blue );
     font-family: 'Cinzel', cursive;
   }
 

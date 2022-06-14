@@ -6,12 +6,14 @@ const DivWorks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  overflow: hidden;
 `
 const DivWorksphotos = styled.div`
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   gap: 2rem;
- 
+  transform: translate3d(${props => props.move});
+  /* transform: translate3d(900px,0,0); */
 `
 const InfoWorks = styled.div`
   display: flex;
@@ -42,10 +44,16 @@ const SpanInfo = styled.span`
 `
 const PhotoInfo = styled.div`
   flex-shrink: 0;
-  max-width: 30%;
+  max-width: 25%;
+  position: relative;
 `
 const InInfo = styled.span`
-
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  font-size: .875rem;
 `
 
 
