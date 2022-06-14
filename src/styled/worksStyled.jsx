@@ -10,10 +10,8 @@ const DivWorks = styled.div`
 `
 const DivWorksphotos = styled.div`
   display: flex;
-  /* overflow: hidden; */
   gap: 2rem;
   transform: translate3d(${props => props.move});
-  /* transform: translate3d(900px,0,0); */
 `
 const InfoWorks = styled.div`
   display: flex;
