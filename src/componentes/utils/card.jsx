@@ -3,13 +3,22 @@ import { Titulo } from '../../styled/mainStyled'
 import  * as S from "../../styled/cardStyled"
 
 export const Card = ({img,info,title,button,fontT,leftItem,rightItem, top,
-bgc,padding}) => {
+bgc,padding,gridcolum,imgRight,imgLeft,widthitem}) => {
+
+  console.log(img)
+
   return (
     <S.CardItens>
 
-      <S.imgItem></S.imgItem>
+      <S.imgItem
+        imgBg={img}
+        imgLeft={imgLeft}
+        imgRight={imgRight}
+      ></S.imgItem>
 
       <S.infoItens
+      widthitem={widthitem}
+      gridcolum={gridcolum}
       top={top}
       padding={padding}
       bgc={bgc}

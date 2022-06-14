@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components"
-import ContriStatue from "../images/contriSaint.png"
 
 
 const ContriStyled = styled.div`
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,28 +19,24 @@ const InfoContri = styled.div`
   align-items: center;
   justify-content: start;
   position: relative;
+  color: rgb(8, 19, 30);
 `
 
 const CardItens = styled.div`
+  overflow: hidden;
   position: relative;
   width: 100%;
   height: 435px;
-  display: grid;
-  justify-content: start;
-  grid-template-columns: repeat(2,1fr);
+  /* display: grid; */
+  /* justify-content: start; */
+  /* grid-template-columns: repeat(2,1fr); */
 
-
-  ${props => props.left == "true" && css`
-    background: linear-gradient(to left, #fff, #07090C, #000 , #000 80%);
-    background: linear-gradient(to left, #07090C, #000, #07090C);
-  `}
-  ${props => props.right == "true" && css`
-    background: linear-gradient(to right, #07090C, #000 , #000 80%);
-  `}
 `
 
 const infoItens = styled.div`
   position: absolute;
+  width: ${props=>props.widthitem};
+  grid-column: ${props=>props.gridcolum};
   left: ${props=>props.left};
   right: ${props=>props.right};
   padding:${props=>props.padding};
@@ -52,18 +47,29 @@ const infoItens = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-`
+  /* gap: 1rem; */
+  /* color: rgb(8, 19, 30); */
+  `
 const imgItem = styled.div`
-  /* max-width: 100%; */
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: ${props=>props.imgLeft};
+  right: ${props=>props.imgRight};
   display: block;
-  background: transparent url(${ContriStatue}) center no-repeat;
+  background: transparent;
+  background-image: url(${props=>props.imgBg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `
 const P = styled.p`
+  max-width: 10ch;
   color: #fff;
   font-size: 2rem;
   max-width: 20ch;
   text-align: center;
+  letter-spacing: 3px;
 `
 
 

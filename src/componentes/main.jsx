@@ -19,7 +19,7 @@ export const MainPage = () => {
         <ButtonsDiv>
             <Button 
             padding=".8rem 2rem"
-            background = "#0A0D11"
+            background = "#050607"
             before
             color = "#FFCD74"
             title="Works">
