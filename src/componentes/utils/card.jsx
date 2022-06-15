@@ -5,7 +5,6 @@ import  * as S from "../../styled/cardStyled"
 export const Card = ({img,info,title,button,fontT,leftItem,rightItem, top,
 bgc,padding,gridcolum,imgRight,imgLeft,widthitem}) => {
 
-  console.log(img)
 
   return (
     <S.CardItens>

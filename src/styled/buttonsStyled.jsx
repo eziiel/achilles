@@ -19,9 +19,10 @@ const ButtonTheme = styled.button`
     color: ${props => props.color};
     position: relative;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: 1.125px;
     text-transform: uppercase;
-    
+
     ${props => props.before && css`
     ::before {
       content: "";
@@ -29,7 +30,7 @@ const ButtonTheme = styled.button`
       left: 2px;
       width: 2px;
       height: 100%;
-      background: linear-gradient(135deg, #BF841A , #0A0D11);;
+      background: linear-gradient(135deg, #BF841A , #0A0D11);
       position: absolute;
     }
     ::after {

@@ -27,6 +27,7 @@ const TitleInfo = styled.h1`
   -webkit-text-fill-color: transparent;
 `
 const SpanInfo = styled.span`
+  cursor: pointer;
   color: #fff;
   ::before{
     position: absolute;

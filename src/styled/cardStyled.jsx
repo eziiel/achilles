@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 
 
 const ContriStyled = styled.div`
@@ -9,7 +9,6 @@ const ContriStyled = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  
 `
 
 const InfoContri = styled.div`
@@ -27,10 +26,6 @@ const CardItens = styled.div`
   position: relative;
   width: 100%;
   height: 435px;
-  /* display: grid; */
-  /* justify-content: start; */
-  /* grid-template-columns: repeat(2,1fr); */
-
 `
 
 const infoItens = styled.div`
@@ -47,8 +42,6 @@ const infoItens = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 1rem; */
-  /* color: rgb(8, 19, 30); */
   `
 const imgItem = styled.div`
   width: 80%;
@@ -71,8 +64,6 @@ const P = styled.p`
   text-align: center;
   letter-spacing: 3px;
 `
-
-
 
 export {
   ContriStyled,

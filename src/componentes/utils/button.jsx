@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonUtil } from '../../styled/buttons'
+import { ButtonUtil } from '../../styled/buttonsStyled'
 
 export const Button = ({title,width,height,padding,background,color,before,boderR}) => {
   return (

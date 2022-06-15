@@ -1,7 +1,7 @@
 import { HeaderNav, NavMenu, Logo, Li, Ul } from "../styled/navMenu";
 
 import logo from "../images/logo.svg";
-import { ButtonTheme } from "../styled/buttons";
+import { ButtonTheme } from "../styled/buttonsStyled";
 
 const Nav = () => {
   return (
