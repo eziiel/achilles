@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 const DivWorks = styled.div`
   max-width: 1100px;
@@ -27,8 +27,13 @@ const TitleInfo = styled.h1`
   -webkit-text-fill-color: transparent;
 `
 const SpanInfo = styled.span`
-  cursor: pointer;
+
+cursor: pointer;
   color: #fff;
+  font-weight:650 ;
+${props => props.theme == true && css`
+  color: var(--dark-blue);
+`}
   ::before{
     position: absolute;
     content: "";
@@ -37,8 +42,14 @@ const SpanInfo = styled.span`
     width: 3px;
     height: 35px;
     border-radius: 20%;
-    background: radial-gradient(#FFE5A1, #75510e,#0A0D11);
-    box-shadow: inset 2px 2px 3px #0A0D11;
+    background: radial-gradient(#FFE5A1, #75510e64,#0a0d1129);
+    box-shadow: inset 2px 2px 3px #0a0d1122;
+    
+    
+    ${props => props.theme == true && css`
+    background: radial-gradient(#f6b81b, #71592dc9,#d5e1f229, transparent);
+    box-shadow: inset 2px 2px 3px #f7f5efd7 ;
+  `}
   }
 `
 const PhotoInfo = styled.div`
@@ -52,6 +63,7 @@ const InInfo = styled.span`
   position: absolute;
   z-index: 1;
   bottom: 0;
+  left: 20px;
   font-size: .875rem;
 `
 

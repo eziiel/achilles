@@ -5,17 +5,22 @@ import { Works } from './works'
 import { MainPage } from './main'
 import { Contribuition } from './contribuition'
 import { Footer } from './footer'
+import { ContextTheme } from '../contextTheme'
 
 
 export const MainHome = () => {
+  const {statusTheme} = React.useContext(ContextTheme)
+
+
+
     return (
       <>
-        <GlobalStyled />
-        <Nav/>
-        <MainPage/>
-        <Works/>
-        <Contribuition/>
-        <Footer />
+          <GlobalStyled theme={statusTheme}/>
+          <Nav/>
+          <MainPage/>
+          <Works/>
+          <Contribuition/>
+          <Footer />
       </>
     )
 }
