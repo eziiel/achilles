@@ -32,6 +32,7 @@ const GlobalStyled = createGlobalStyle`
     
     //others
     --blue-linear : linear-gradient(50deg,#0A0D11 75%, #111822, #121f30 );
+    --blue-linear2 : linear-gradient(30deg,#050607 75%, #0a152280, #070c1211 );
     
     //texts
     --font1: 700 ${pixelsToRem(48)}/${pixelsToRem(
@@ -47,6 +48,7 @@ const GlobalStyled = createGlobalStyle`
   body {
     background: var(--bg);
     font-family: 'Cinzel', cursive;
+    height: 2500px;
   }
 
 `

@@ -4,6 +4,7 @@ import { Nav } from './nav'
 import { Works } from './works'
 import { MainPage } from './main'
 import { Contribuition } from './contribuition'
+import { Footer } from './footer'
 
 
 export const MainHome = () => {
@@ -14,6 +15,7 @@ export const MainHome = () => {
         <MainPage/>
         <Works/>
         <Contribuition/>
+        <Footer />
       </>
     )
 }

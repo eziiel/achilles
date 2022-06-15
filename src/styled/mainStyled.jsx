@@ -14,8 +14,8 @@ const Main = styled.main`
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   justify-content: center;
-
   margin-bottom: 5rem;
+  background: var(--blue-linear2)
 `;
 const Section = styled.section`
   display: flex;
@@ -28,7 +28,6 @@ const Titulo = styled.div`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* color: black; */
   font: var(--font1);
   font-size: ${props => props.fontS};
   padding: 2rem 0;
@@ -58,10 +57,9 @@ const ButtonsDiv = styled.div`
 
 const ImgMain = styled.div`
   display: block;
-  /* padding: 1rem; */
   width: 100%;
   height: 100%;
-  /* background: red; */
+  /* background: linear-gradient(45deg,red,green); */
   background: transparent url(${fotoBG}) center no-repeat;
   background-position: center;
   background-size: cover;
