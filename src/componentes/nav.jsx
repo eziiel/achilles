@@ -1,34 +1,44 @@
-import { HeaderNav, NavMenu, Logo, Li, Ul } from "../styled/navMenu";
+import { HeaderNav, NavMenu, Logo, Li, Ul, LogoImg } from "../styled/navMenu";
 
-import logo from "../images/logo.svg";
 import { ButtonTheme } from "../styled/buttonsStyled";
+import React from "react";
+import { ContextTheme } from "../contextTheme";
+import accessNavItems from './nav.json'
 
 const Nav = () => {
+  const {statusTheme,setStatusTheme} = React.useContext(ContextTheme)
+
+
+
+  const handleTheme = () => {
+    setStatusTheme(!statusTheme)
+  }
+
+
   return (
     <>
-      <HeaderNav>
-        <Logo>
-          <img src={logo} alt="logo-achilles" />
-          <h1>ORPHEUS</h1>
+      <HeaderNav theme={statusTheme}>
+        <Logo theme={statusTheme}>
+          <LogoImg theme={statusTheme}/>
+          <h1>ACHILLES</h1>
         </Logo>
 
         <NavMenu>
           <Ul>
-            <Li>
-              <a href="#">Works</a>
-            </Li>
-            <Li>
-              <a href="#">Contribution</a>
-            </Li>
-            <Li>
-              <a href="#">Community</a>
-            </Li>
-            <Li>
-              <a href="#">Get in Touch</a>
-            </Li>
+            {accessNavItems.map(({accessNav}) => (
+              <Li 
+              theme = {statusTheme}
+              key={accessNav}>
+                <a 
+                href="#">{accessNav}</a>
+              </Li>
+            ))}
           </Ul>
 
-          <ButtonTheme />
+          <ButtonTheme 
+            theme = {statusTheme}
+            onClick={handleTheme}
+          />
         </NavMenu>
       </HeaderNav>
     </>

@@ -1,5 +1,8 @@
-import styled from "styled-components";
-import fotoBG from "../images/foto-main-dark.png";
+import styled, { css } from "styled-components";
+import fotoBGDark from "../images/foto-main-dark.png";
+import fotoBGLight from "../images/foto-main-light.png";
+
+
 
 function pixelsToRem(...values) {
   return values.reduce((a, i) => (a += i / 16 + `rem `), "").trim();
@@ -16,6 +19,11 @@ const Main = styled.main`
   justify-content: center;
   margin-bottom: 5rem;
   background: var(--blue-linear2)
+
+  ${props => props.theme && css`
+    background: var(--light);
+  `}
+
 `;
 const Section = styled.section`
   display: flex;
@@ -32,6 +40,8 @@ const Titulo = styled.div`
   font-size: ${props => props.fontS};
   padding: 2rem 0;
 
+  
+
   h1 {
     font-size: ${pixelsToRem(48)};
   }
@@ -47,6 +57,10 @@ const Titulo = styled.div`
 const P1 = styled.p`
   color: #fff;
   font: var(--font2);
+  ${props => props.theme == true && css`
+    color: var(--dark-blue);
+    font-weight: 700;
+  `}
 `;
 
 const ButtonsDiv = styled.div`
@@ -59,10 +73,14 @@ const ImgMain = styled.div`
   display: block;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(45deg,red,green); */
-  background: transparent url(${fotoBG}) center no-repeat;
+  background: transparent url(${fotoBGDark}) center no-repeat;
   background-position: center;
   background-size: cover;
-`;
+    
+    ${props => props.theme == true && css`
+      background: transparent url(${fotoBGLight})  center no-repeat;
+    `}
+
+  `;
 
 export { Main, Section, Titulo, P1, ButtonsDiv, ImgMain };

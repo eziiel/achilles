@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 function pixelsToRem(...values) {
   return values.reduce((a, i) => (a += i / 16 + `rem `), "").trim();
@@ -26,6 +26,7 @@ const GlobalStyled = createGlobalStyle`
     //collors
     --bg:#050607;
     --dark-blue: #0A0D11;
+    --light:#fff;
 
     //golders
     --golder1 : linear-gradient(90deg, #F4CD68, #000);
@@ -49,6 +50,10 @@ const GlobalStyled = createGlobalStyle`
     background: var(--bg);
     font-family: 'Cinzel', cursive;
     height: 2500px;
+    
+    ${props => props.theme && css`
+      background: var(--light);
+    `}
   }
 
 `

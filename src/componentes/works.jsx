@@ -2,12 +2,20 @@ import React from 'react'
 import * as S from '../styled/worksStyled'
 import images from "../images/works.json"
 import { Titulo } from '../styled/mainStyled'
+import { ContextTheme } from '../contextTheme'
+
+
+
 
 const Works = () => {
+  const {statusTheme} = React.useContext(ContextTheme)
+
+
   const[inicio,SetInicio] = React.useState(0)
   const[movimento,SetMovimento] = React.useState(0)
   const[final,SetFinal] = React.useState(0)
   const refWork = React.useRef()
+
 
 
 
@@ -37,7 +45,7 @@ const Works = () => {
     <S.DivWorks>
       <S.InfoWorks>
         <Titulo fontS="2rem">Recent NFT</Titulo>
-        <S.SpanInfo left="90%">VIEW MORE</S.SpanInfo>
+        <S.SpanInfo theme={statusTheme} left="90%">VIEW MORE</S.SpanInfo>
       </S.InfoWorks>
 
       <S.DivWorksphotos

@@ -5,18 +5,20 @@ import { Card } from "./utils/card"
 //images
 import statueCon from "../images/statueCon.png"
 import statuesCon from "../images/statuesCon.png"
+import React from "react"
+import { ContextTheme } from "../contextTheme"
 
 
 
 function Contribuition () {
-
+  const {statusTheme} = React.useContext(ContextTheme)
 
   return(
     <S.ContriStyled>
 
       <S.InfoContri>
         <Titulo>Contribuition</Titulo>
-        <SpanInfo left="77%" >View More</SpanInfo>
+        <SpanInfo theme={statusTheme}left="77%" >View More</SpanInfo>
       </S.InfoContri>
 
                 <Card 

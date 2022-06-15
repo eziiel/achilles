@@ -1,10 +1,13 @@
 import { MainHome } from "./componentes/mainHomePath"
+import { ProviderContextTheme } from "./contextTheme"
 
 function App() {
 
   return (
     <div className="App">
-      <MainHome />
+      <ProviderContextTheme>
+        <MainHome />
+      </ProviderContextTheme>
     </div>
   )
 }
