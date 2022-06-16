@@ -8,11 +8,17 @@ const DivWorks = styled.div`
   gap: 2rem;
   overflow: hidden;
 `
-const DivWorksphotos = styled.div`
+
+const DivWorksphotos = styled.div.attrs(props => ({
+  style: {
+    transform: props.move
+  },
+}))`
   display: flex;
   gap: 2rem;
-  transform: translate3d(${props => props.move});
+  transition: .8s ease-in-out;
 `
+
 const InfoWorks = styled.div`
   display: flex;
   justify-content: end;
@@ -27,7 +33,6 @@ const TitleInfo = styled.h1`
   -webkit-text-fill-color: transparent;
 `
 const SpanInfo = styled.span`
-
 cursor: pointer;
   color: #fff;
   font-weight:650 ;
@@ -63,7 +68,7 @@ const InInfo = styled.span`
   position: absolute;
   z-index: 1;
   bottom: 0;
-  left: 20px;
+  padding: 1rem;
   font-size: .875rem;
 `
 
