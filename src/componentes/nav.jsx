@@ -3,7 +3,7 @@ import { HeaderNav, NavMenu, Logo, Li, Ul, LogoImg } from "../styled/navMenu";
 import { ButtonTheme } from "../styled/buttonsStyled";
 import React from "react";
 import { ContextTheme } from "../contextTheme";
-import accessNavItems from './nav.json'
+import accessNavItems from './utils/nav.json'
 
 const Nav = () => {
   const {statusTheme,setStatusTheme} = React.useContext(ContextTheme)

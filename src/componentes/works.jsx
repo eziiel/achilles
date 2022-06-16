@@ -5,42 +5,41 @@ import { Titulo } from '../styled/mainStyled'
 import { ContextTheme } from '../contextTheme'
 
 
-
-
 const Works = () => {
   const {statusTheme} = React.useContext(ContextTheme)
-
-
-  const[inicio,SetInicio] = React.useState(0)
+  
+  
+  const[statusMov,setStatusMov] = React.useState(false)
+  const[inicio,setInicio] = React.useState(0)
   const[movimento,SetMovimento] = React.useState(0)
   const[final,SetFinal] = React.useState(0)
-  const refWork = React.useRef()
-
-
-
-
+  
   function handleMouseDown (e) {
-    e.preventDefault()
-    // console.log(e.clientX)
-    SetInicio(e.clientX)
-    inicio && console.log(inicio)
-    
-
-    refWork.current.addEventListener('mousemove', handleMouseMove)
-    refWork.current.addEventListener('mouseup', handleMouseUp)
+    e.preventDefault()  
+    setInicio(e.clientX)
+    setStatusMov(true)
   }
   
   function handleMouseMove (e) {
-    // console.log("a")
-    SetMovimento(inicio - e.clientX )
-    // SetMovimento(inic  io - e.clientX)
+    statusMov && SetMovimento(final + (inicio - e.clientX))
   }
+  React.useEffect(()=>{
+    movimento < -150 && SetMovimento(0)
+    movimento > 550 && SetMovimento(400)
+  },[movimento])
+    
+  
   function handleMouseUp (e) {
-    SetFinal(inicio - e.clientX)
-    console.log(final)
-    refWork.current.removeEventListener('mousemove', handleMouseMove)
-  }
+    setStatusMov(false)
 
+    SetFinal(movimento)
+    console.log(movimento)
+  }
+  function handleMouseLeave (e) {
+    SetFinal(movimento)
+    setStatusMov(false)
+  }
+  
   return (
     <S.DivWorks>
       <S.InfoWorks>
@@ -49,9 +48,11 @@ const Works = () => {
       </S.InfoWorks>
 
       <S.DivWorksphotos
-        move ={`${movimento}px,0px,0px `}
+        move ={`translate3D(${-movimento}px,0px,0px)`}
         onMouseDown={handleMouseDown}
-        ref={refWork}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
       >
 
         {images.map(({src,alt,title})=> (
