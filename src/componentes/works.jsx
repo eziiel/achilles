@@ -33,7 +33,6 @@ const Works = () => {
     setStatusMov(false)
 
     SetFinal(movimento)
-    console.log(movimento)
   }
   function handleMouseLeave (e) {
     SetFinal(movimento)

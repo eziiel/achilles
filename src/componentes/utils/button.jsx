@@ -2,9 +2,7 @@ import React from 'react'
 import { ButtonUtil } from '../../styled/buttonsStyled'
 
 export const Button = ({title,width,height,padding,background,color,before,boderR,theme,
-  colorTheme,}) => {
-  // const {statusTheme} = React.useCntext(ContextTheme)
-
+  colorTheme}) => {
 
   return (
 

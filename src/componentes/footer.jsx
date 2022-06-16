@@ -4,15 +4,18 @@ import * as S from "./../styled/footerStyled"
 import { Titulo } from '../styled/mainStyled'
 import { Button } from './utils/button'
 import fotos from "../images/social.json"
+import { ContextTheme } from '../contextTheme'
 
 
 
 export const Footer = () => {
+  const {statusTheme} = React.useContext(ContextTheme)
+
   return (
 
     <S.FooterA>
       <Titulo>Let's Conect</Titulo>
-      <S.FooterP>Get in touch for opportunities or just to say hi! 👋</S.FooterP>
+      <S.FooterP theme={statusTheme}>Get in touch for opportunities or just to say hi! 👋</S.FooterP>
            
            <S.FooterSocial>
 
@@ -21,7 +24,7 @@ export const Footer = () => {
                   <Button
                   key={alt} 
                   padding="2rem"
-                  background = {`#050607 url(${src}) center no-repeat`} 
+                  background = {`transparent url(${src}) center no-repeat`} 
                   before
                   color = "#FFCD74"
                   >

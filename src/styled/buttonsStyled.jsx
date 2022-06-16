@@ -43,27 +43,19 @@ const ButtonTheme = styled.button`
       top: 0;
       left: 2px;
       width: 2px;
-      height: 100%;
-      background: linear-gradient(135deg, #BF841A , #0A0D11);
+      height: 80%;
+      background: linear-gradient(135deg,  #BF841A , #e6a22389, #e6a22334);
       position: absolute;
       
-      ${props => props.theme == true && css`
-        background: linear-gradient(135deg, #BF841A , #e2e2e2);
-    `}
-
     }
     ::after {
       content: "";
       top: 0;
       left: 2px;
-      width: 100%;
+      width: 90%;
       height: 2px;
-      background: linear-gradient(135deg, #BF841A , #0A0D11 );;
+      background: linear-gradient(135deg,  #BF841A , #e6a22389, #e6a22334);
       position: absolute;
-      
-      ${props => props.theme == true && css`
-        background: linear-gradient(135deg, #BF841A , #e2e2e2);
-    `}
     }
     span{
       position: relative;

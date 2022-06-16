@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 
 const FooterA = styled.footer`
@@ -12,6 +12,10 @@ const FooterP = styled.p`
   color: #fff;
   font-size: 2rem;
   letter-spacing: 2px;
+  font-weight: 600;
+  ${props => props.theme == true && css`
+    color: var(--dark);
+  `}
   `
 const FooterSocial =styled.div`
   display: flex;
