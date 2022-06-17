@@ -1,9 +1,11 @@
 import React from 'react'
 import { Titulo } from '../../styled/mainStyled'
+import { Button } from './button'
 import  * as S from "../../styled/cardStyled"
 
+
 export const Card = ({img,info,title,button,fontT,leftItem,rightItem, top,
-bgc,padding,gridcolum,imgRight,imgLeft,widthitem}) => {
+bgc,padding,gridcolum,imgRight,imgLeft,widthitem,margin,letter}) => {
 
 
   return (
@@ -26,7 +28,15 @@ bgc,padding,gridcolum,imgRight,imgLeft,widthitem}) => {
       >
         <Titulo fontS={fontT}>{title}</Titulo>
         <S.P>{info}</S.P>
-        <button>{button}</button>
+        <Button
+         background="linear-gradient(45deg, #FFE5A1, #dc9915 50%, #FFCD74)"
+         padding=".5rem 1rem"
+         color = "#0A0D11"
+         boderR = "5px"
+         title={button}
+         margin ={margin}
+         letter={letter}
+        ></Button>
       </S.infoItens>
 
 

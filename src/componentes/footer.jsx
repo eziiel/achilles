@@ -26,6 +26,7 @@ export const Footer = () => {
                   padding="2rem"
                   background = {`transparent url(${src}) center no-repeat`} 
                   before
+                  footer
                   color = "#FFCD74"
                   >
                   </Button>

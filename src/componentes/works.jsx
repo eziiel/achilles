@@ -49,7 +49,7 @@ const Works = () => {
     <S.DivWorks>
       <S.InfoWorks>
         <Titulo fontS="2rem">Recent NFT</Titulo>
-        <S.SpanInfo theme={statusTheme} left="90%">VIEW MORE</S.SpanInfo>
+        <S.SpanInfo theme={statusTheme} >VIEW MORE</S.SpanInfo>
       </S.InfoWorks>
 
       <S.DivWorksphotos
