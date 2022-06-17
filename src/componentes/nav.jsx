@@ -1,4 +1,4 @@
-import { HeaderNav, NavMenu, Logo, Li, Ul, LogoImg } from "../styled/navMenu";
+import { HeaderNav, NavMenu, Logo, Li, Ul, LogoImg, DropMenu } from "../styled/navMenu.Styledjsx";
 
 import { ButtonTheme } from "../styled/buttonsStyled";
 import React from "react";
@@ -34,6 +34,19 @@ const Nav = () => {
               </Li>
             ))}
           </Ul>
+
+            <DropMenu>
+              <span></span>
+              <ul>
+                {accessNavItems.map(({accessNav,id}) => (
+                  <li
+                  key={id}>
+                    <a href="#">{accessNav}</a>
+                  </li>
+                ))}
+              </ul>
+            </DropMenu>
+
 
           <ButtonTheme 
             theme = {statusTheme}
