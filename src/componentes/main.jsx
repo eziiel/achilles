@@ -9,7 +9,8 @@ export const MainPage = () => {
 
 
   return (
-    <Main theme={statusTheme}>
+    <Main
+     theme={statusTheme}>
       <Section>
         <Titulo>
           <h1>Yet the story of</h1>

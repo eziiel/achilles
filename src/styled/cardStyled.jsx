@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-
 const ContriStyled = styled.div`
   max-width: 1100px;
   margin: 3rem auto;
@@ -9,16 +8,31 @@ const ContriStyled = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-`
 
+  @media(max-width:1200px){
+    max-width: 900px;
+  }
+
+`
 const InfoContri = styled.div`
   display: flex;
-  gap: 4rem;
-  align-self: start;
+  gap: 3rem;
+  width: 100%;
   align-items: center;
   justify-content: start;
   position: relative;
-  color: rgb(8, 19, 30);
+  padding: 0 2rem;
+  
+  @media(max-width:1200px){
+    gap: 2rem !important;
+    justify-content: end;
+    font-size: .875rem;
+  };
+  @media(max-width:1200px){
+    gap: 2rem !important;
+    justify-content: start;
+    font-size: .875rem;
+  };
 `
 
 const CardItens = styled.div`
@@ -26,6 +40,21 @@ const CardItens = styled.div`
   position: relative;
   width: 100%;
   height: 435px;
+  padding: 0 2rem;
+  
+  @media(max-width:1200px){
+    width: 100%;
+    height: 280px;
+  }
+  @media(max-width:900px){
+    width: 80%;
+    height: 280px;
+  }
+  @media(max-width:500px){
+    width: 80%;
+    height: 280px;
+  }
+
 `
 
 const infoItens = styled.div`
@@ -42,6 +71,12 @@ const infoItens = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
+  @media(max-width:1200px){
+    height: 280px;
+  }
+
   `
 const imgItem = styled.div`
   width: 80%;
@@ -63,6 +98,16 @@ const P = styled.p`
   max-width: 20ch;
   text-align: center;
   letter-spacing: 3px;
+  
+  @media(max-width:1200px){
+    font-size: 1.5rem;
+  }
+  @media(max-width:900px){
+    font-size: 1rem;
+  }
+  @media(max-width:500px){
+    font-size: .875rem;
+  }
 `
 
 export {

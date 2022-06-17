@@ -26,7 +26,21 @@ const ButtonTheme = styled.button`
     cursor: pointer;
     font-weight: 700;
     letter-spacing: 1.125px;
+    letter-spacing:${props => props.letter};
     text-transform: uppercase;
+    margin: ${props => props.margin};
+  
+  
+    
+    ${props => props.footer && css`
+    
+    @media(max-width:500px){
+          padding: 1.5rem;
+          width:32px;
+          height:32px;
+        }
+    `}
+
 
     ${props => props.theme == true && css`
       background: var(--light);

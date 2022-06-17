@@ -37,13 +37,13 @@ const GlobalStyled = createGlobalStyle`
     
     //texts
     --font1: 700 ${pixelsToRem(48)}/${pixelsToRem(
-  48,
-)} 'Cinzel', cursive;
+      48
+      
+      
+  )} 'Cinzel', cursive;
     --font2: 300 ${pixelsToRem(22)}/${pixelsToRem(48,
 )} 'Source Sans Pro', sans-serif;
-
-
-  }
+}
 
 
   body {

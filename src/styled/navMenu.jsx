@@ -39,6 +39,14 @@ const LogoImg = styled.div`
       background: transparent url(${logoDark}) center no-repeat;
   `}
 `
+const Ul = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+
+  @media(max-width:900px){
+    display: none;
+  }
+`
 
 const Li = styled.li`
   padding:.5rem 1rem;
@@ -53,9 +61,6 @@ const Li = styled.li`
       color: var(--dark-blue);
     }
 `}
-`
-const Ul = styled.div`
-  display: flex;
 `
 
 export {
