@@ -15,20 +15,26 @@ const Works = () => {
   const[final,SetFinal] = React.useState(0)
   
   function handleMouseDown (e) {
-    e.preventDefault()  
-    setInicio(e.clientX)
-    setStatusMov(true)
+    if(e.type == "mousedown") {
+      e.preventDefault()  
+      setStatusMov(true)
+      setInicio(e.clientX)
+    } else {
+      setInicio(e.changedTouches[0].clientX)
+      setStatusMov(true)
+    }
   }
   
   function handleMouseMove (e) {
-    statusMov && SetMovimento(final + (inicio - e.clientX))
+    statusMov && e.type == "mousemove" && SetMovimento(previus => previus = final + (inicio - e.clientX))
+    statusMov && e.type == "touchmove" &&SetMovimento(previus => previus = final + (inicio - (e.changedTouches[0].clientX)))
   }
+  
   React.useEffect(()=>{
     movimento < -150 && SetMovimento(0)
     movimento > 550 && SetMovimento(400)
   },[movimento])
     
-  
   function handleMouseUp (e) {
     setStatusMov(false)
 
@@ -52,6 +58,9 @@ const Works = () => {
         onMouseUp={handleMouseUp}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleMouseDown}
+        onTouchMove={handleMouseMove}
+        onTouchEnd={handleMouseUp}
       >
 
         {images.map(({src,alt,title})=> (
