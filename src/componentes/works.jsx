@@ -3,7 +3,7 @@ import * as S from '../styled/worksStyled'
 import images from "../images/works.json"
 import { Titulo } from '../styled/mainStyled'
 import { ContextTheme } from '../contextTheme'
-// import teste from ""
+import teste from "../images/work-state4.png"
 
 
 const Works = () => {
@@ -67,7 +67,7 @@ const Works = () => {
         {images.map(({src,alt,title})=> (
           <S.PhotoInfo 
           key={alt}>
-            <img src={src} alt={alt} />
+            <img src={teste} alt={alt} />
             <S.InInfo>{title}</S.InInfo>
 
           </S.PhotoInfo>
