@@ -63,34 +63,37 @@ const Li = styled.li`
 `}
 `
 const DropMenu = styled.button`
-  width: 40px;
-  height: 40px;
-  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left:10px;
   position: relative;
   border: none;
   border-radius: 5px;
   background: var(--blue-linear);
   background: transparent;
   cursor: pointer;
+  display: none;
+
+  @media(max-width:900px) {
+    display: block;
+  }
   
-  /* background: red; */
 
   span{
     cursor: pointer;
     content: "";
     position: absolute;
-    width: 80%;
+    width: 70%;
     height: 3px;
     border-radius: 5px;
-    left: 10%;
+    left: 15%;
     background: var(--golder2);
-    //trocar theme
     
     ::before{
       position: absolute;
       content: "";
       border-radius: 5px;
-      width: 70%;
+      width: 60%;
       height: 3px;
       left: 0;
       top:-10px;
@@ -100,7 +103,7 @@ const DropMenu = styled.button`
     :after{
       content: "";
       position: absolute;
-      width: 50%;
+      width: 40%;
       height: 3px;
       top:10px;
       left: 0;
@@ -115,11 +118,21 @@ const DropMenu = styled.button`
     top: 50px;
     right: 0;
     padding: .5rem 1.5rem;
+    display: none;
+
+    ${props => props.theme==true && css`
+      background: #fff;
+      color: var(--dark-blue);
+    `}
+
+    ${props => props.statusDrop==true && css`
+      display: block;
+    `}
 
     ::before{
       position: absolute;
       content: "";
-      width: 80%;
+      width: 100%;
       height: 2px;
       background: red;
       background: linear-gradient(135deg,  #BF841A , #e6a22389, #e6a22334,#efb24016);
@@ -137,16 +150,16 @@ const DropMenu = styled.button`
       left: 0;
 
     }
-
-
-
-
-
     li{
       margin: 1rem 0;
       text-align: start;
       a{
         color: #fff;
+        padding: 1rem;
+
+        ${props => props.theme==true && css`
+          color: var(--dark-blue);
+        `}
       }
 
     }

@@ -1,19 +1,23 @@
-import { HeaderNav, NavMenu, Logo, Li, Ul, LogoImg, DropMenu } from "../styled/navMenu.Styledjsx";
+import { HeaderNav, NavMenu, Logo, Li, Ul, LogoImg, DropMenu } from "../styled/navMenu.Styled.jsx";
 
 import { ButtonTheme } from "../styled/buttonsStyled";
-import React from "react";
+import React, { useRef } from "react";
 import { ContextTheme } from "../contextTheme";
 import accessNavItems from './utils/nav.json'
 
 const Nav = () => {
   const {statusTheme,setStatusTheme} = React.useContext(ContextTheme)
-
-
+  const [statusDrop, setStatusDrop] = React.useState(false)
+  let dropMenuRef = useRef()
 
   const handleTheme = () => {
     setStatusTheme(!statusTheme)
   }
-
+  
+  const handleDrop = () => {
+    setStatusDrop(!statusDrop)
+    // console.log(dropMenuRef.current.getBoundingClientRect().x)
+  }
 
   return (
     <>
@@ -35,13 +39,18 @@ const Nav = () => {
             ))}
           </Ul>
 
-            <DropMenu>
+            <DropMenu
+            ref={dropMenuRef}
+            onClick={handleDrop}
+            statusDrop={statusDrop}
+            theme={statusTheme}>
               <span></span>
               <ul>
                 {accessNavItems.map(({accessNav,id}) => (
                   <li
                   key={id}>
-                    <a href="#">{accessNav}</a>
+                    <a 
+                    href="#">{accessNav}</a>
                   </li>
                 ))}
               </ul>

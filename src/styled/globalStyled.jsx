@@ -27,7 +27,7 @@ const GlobalStyled = createGlobalStyle`
 
     //golders
     --golder1 : linear-gradient(90deg, #F4CD68, #000);
-    --golder2 : linear-gradient(90deg, #000,#F4CD68);
+    --golder2 : linear-gradient(90deg, #0000002b,#F4CD68);
     
     //others
     --blue-linear : linear-gradient(50deg,#0A0D11 75%, #111822, #121f30 );
