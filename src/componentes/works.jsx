@@ -46,7 +46,6 @@ const Works = () => {
   }
   
 
-  console.log(images)
 
   return (
     <S.DivWorks>
