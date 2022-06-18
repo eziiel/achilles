@@ -1,27 +1,27 @@
 [
   {
     "alt":"works",
-    "src" : "/src/images/work-state.png",
+    "src" : "src/images/work-state.png",
     "title" : "Relics Of A Mortal Past 1 - NFT"
   },
   {
     "alt":"works2",
-    "src" : "/src/images/work-state2.png",
+    "src" : "src/images/work-state2.png",
     "title" : "Relics Of A Mortal Past 2 - NFT"
   },
   {
     "alt":"works3",
-    "src" : "/src/images/work-state3.png",
+    "src" : "src/images/work-state3.png",
     "title" : "Relics Of A Mortal Past 3 - NFT"
   },
   {
     "alt":"works4",
-    "src" : "/src/images/work-state4.png",
+    "src" : "src/images/work-state4.png",
     "title" : "Relics Of A Mortal Past 4 - NFT"
   },
   {
     "alt":"works5",
-    "src" : "/src/images/work-state5.png",
+    "src" : "src/images/work-state5.png",
     "title" : "Relics Of A Mortal Past 5 - NFT"
   }
 ]

@@ -38,7 +38,6 @@ const Nav = () => {
           </Ul>
 
             <DropMenu
-            ref={dropMenuRef}
             onClick={handleDrop}
             statusDrop={statusDrop}
             theme={statusTheme}>
