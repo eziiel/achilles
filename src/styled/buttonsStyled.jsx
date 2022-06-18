@@ -3,8 +3,8 @@ import sun from "../images/sun.svg"
 import moon from "../images/moon.svg"
 
 const ButtonTheme = styled.button`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: transparent url(${sun}) center no-repeat;
   border: none;
   cursor: pointer;  
@@ -12,7 +12,11 @@ const ButtonTheme = styled.button`
     ${props => props.theme == true && css`
       background: transparent url(${moon}) center no-repeat;
     `}
-  `
+
+  @media(max-width:899px) {
+    
+  }
+`
 
   const ButtonUtil = styled.button`
     border-radius: ${props => props.boderR};

@@ -33,6 +33,7 @@ const DivWorksphotos = styled.div.attrs(props => ({
 }))`
   display: flex;
   gap: 2rem;
+  cursor: pointer;
 `
 
 const InfoWorks = styled.div`
