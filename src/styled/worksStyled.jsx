@@ -1,11 +1,5 @@
 import styled, { css } from "styled-components"
 
-
-function pixelsToRem(...values) {
-  return values.reduce((a, i) => (a += i / 16 + `rem `), "").trim();
-}
-
-
 const DivWorks = styled.div`
   max-width: 1100px;
   margin: 0 auto;

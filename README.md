@@ -53,15 +53,7 @@ This project is licensed under the MIT License. See the [LICENSE](https://openso
 <br>
 <br>
 
----
-<br>
 
-<p align="center">
-    🚧🔧 Project in construction 🔧🚧
-</p>
-<br>
-
----
 
 
 Made with 💜 by [eziiel](https://github.com/eziiel) 🙌🚀

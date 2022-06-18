@@ -1,14 +1,13 @@
 import { HeaderNav, NavMenu, Logo, Li, Ul, LogoImg, DropMenu } from "../styled/navMenu.Styled.jsx";
 
 import { ButtonTheme } from "../styled/buttonsStyled";
-import React, { useRef } from "react";
+import React from "react";
 import { ContextTheme } from "../contextTheme";
 import accessNavItems from './utils/nav.json'
 
 const Nav = () => {
   const {statusTheme,setStatusTheme} = React.useContext(ContextTheme)
   const [statusDrop, setStatusDrop] = React.useState(false)
-  let dropMenuRef = useRef()
 
   const handleTheme = () => {
     setStatusTheme(!statusTheme)
@@ -16,7 +15,6 @@ const Nav = () => {
   
   const handleDrop = () => {
     setStatusDrop(!statusDrop)
-    // console.log(dropMenuRef.current.getBoundingClientRect().x)
   }
 
   return (
