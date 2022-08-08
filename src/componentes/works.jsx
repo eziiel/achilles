@@ -1,6 +1,6 @@
 import React from 'react'
 import * as S from '../styled/worksStyled'
-import images from "../images/works.json"
+import images from "../../public/images/works.json"
 import { Titulo } from '../styled/mainStyled'
 import { ContextTheme } from '../contextTheme'
 

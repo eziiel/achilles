@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import fotoBGDark from "../images/foto-main-dark.png";
-import fotoBGLight from "../images/foto-main-light.png";
+import fotoBGDark from "../../public/images/foto-main-dark.png";
+import fotoBGLight from "../../public/images/foto-main-light.png";
 
 
 

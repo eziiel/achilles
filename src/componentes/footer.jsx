@@ -3,7 +3,7 @@ import React from 'react'
 import * as S from "./../styled/footerStyled"
 import { Titulo } from '../styled/mainStyled'
 import { Button } from './utils/button'
-import fotos from "../images/social.json"
+import fotos from "../../public/images/social.json"
 import { ContextTheme } from '../contextTheme'
 
 

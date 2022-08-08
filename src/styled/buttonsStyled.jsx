@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
-import sun from "../images/sun.svg"
-import moon from "../images/moon.svg"
+import sun from "../../public/images/sun.svg"
+import moon from "../../public/images/moon.svg"
 
 const ButtonTheme = styled.button`
   width: 40px;
