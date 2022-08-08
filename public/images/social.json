@@ -1,22 +1,22 @@
 [
   {
-    "src" : "public/images/in.svg",
+    "src" : "/images/in.svg",
     "alt" : "in"
   },
   {
-    "src" : "public/images/on.svg",
+    "src" : "/images/on.svg",
     "alt" : "on"
   },
   {
-    "src" : "public/images/inst.svg",
+    "src" : "/images/inst.svg",
     "alt" : "inst"
   },
   {
-    "src" : "public/images/m.svg",
+    "src" : "/images/m.svg",
     "alt" : "m"
   },
   {
-    "src" : "public/images/email.svg",
+    "src" : "/images/email.svg",
     "alt" : "email"
   }
 ]
